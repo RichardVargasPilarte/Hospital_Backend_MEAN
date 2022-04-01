@@ -8,18 +8,18 @@ const { dbConnection } = require('./database/config'); // import dbConnection fr
 // Crear server de express
 const app = express(); // create an instance of express
 
+// Configuración de CORS
 app.use(cors()); // enable cors
+
+// Lectura y parseo del body
+app.use(express.json()); // enable json
 
 // Base de datos
 dbConnection(); // connect to database
 
 // Rutas
-app.get('/', (req, res) => {
-    res.json({
-        ok: true,
-        mensaje: 'Petición realizada correctamente'
-    });
-});
+app.use('/api/usuarios', require('./routes/usuarios')); // import routes from usuarios.js
+app.use('/api/login', require('./routes/auth')); // import routes from usuarios.js
 
 app.listen(process.env.PORT, () => {
     console.log('listening on port' + process.env.PORT);    // listen process.env.PORT
