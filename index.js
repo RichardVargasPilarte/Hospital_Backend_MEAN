@@ -19,12 +19,15 @@ dbConnection(); // connect to database
 
 // Rutas
 app.use('/api/usuarios', require('./routes/usuarios')); // import routes from usuarios.js
+app.use('/api/hospitales', require('./routes/hospitales')); // import routes from hospitales.js
+app.use('/api/medicos', require('./routes/medicos')); // import routes from usuarios.js
+app.use('/api/todo', require('./routes/busquedas')); // import routes from busquedas.js
 app.use('/api/login', require('./routes/auth')); // import routes from usuarios.js
+app.use('/api/upload', require('./routes/upload')); // import routes from upload.js
 
 app.listen(process.env.PORT, () => {
     console.log('listening on port' + process.env.PORT);    // listen process.env.PORT
 });
-
 
 // username = 'Richard_Vargas';
 // password = 'Dq7v9YIsMueuJeAy';
