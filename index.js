@@ -17,6 +17,9 @@ app.use(express.json()); // enable json
 // Base de datos
 dbConnection(); // connect to database
 
+// Directorio publico
+app.use(express.static('public')); // enable static files
+
 // Rutas
 app.use('/api/usuarios', require('./routes/usuarios')); // import routes from usuarios.js
 app.use('/api/hospitales', require('./routes/hospitales')); // import routes from hospitales.js
