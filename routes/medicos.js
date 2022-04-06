@@ -29,7 +29,12 @@
  );
  
  router.put('/:id',
-     [],
+     [
+        validarJWT,
+        body('nombre', 'El nombre del médico es obligatorio').not().isEmpty(),
+        body('hospital', 'El id del hospital debe ser válido').isMongoId(),
+        validarCampos
+     ],
      actualizarMedico
  );
  
