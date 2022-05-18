@@ -14,7 +14,7 @@ const { getHospitales, crearHospital, actualizarHospital, borrarHospital } = req
 
 const router = Router(); // create an instance of Router
 
-router.get('/', getHospitales);
+router.get('/', validarJWT, getHospitales);
 
 router.post(
     '/',

@@ -17,6 +17,6 @@ router.use(expressFileUpload()); // use fileUpload() from express-fileupload
 
 router.put('/:tipo/:id', validarJWT, fileUpload);
 
-router.get('/:tipo/:foto', validarJWT, retornarImagen);
+router.get('/:tipo/:foto', retornarImagen);
 
 module.exports = router;

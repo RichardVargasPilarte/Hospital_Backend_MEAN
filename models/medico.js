@@ -23,6 +23,7 @@ const MedicoSchema = new Schema({
 
 MedicoSchema.methods.toJSON = function () {
     const { __v, ...object } = this.toObject();
+
     return object;
 }
 
