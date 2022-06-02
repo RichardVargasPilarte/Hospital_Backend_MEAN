@@ -887,9 +887,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Usuario": () => (/* binding */ Usuario)
 /* harmony export */ });
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
+// import { environment } from '../../environments/environment';
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class Usuario {
     constructor(nombre, email, password, img, google, role, uid) {
         this.nombre = nombre;
@@ -2735,11 +2736,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ImagenPipe": () => (/* binding */ ImagenPipe)
 /* harmony export */ });
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
+// import { environment } from '../../environments/environment';
 
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class ImagenPipe {
     transform(img, tipo) {
         if (!img) {
@@ -2797,18 +2799,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "BusquedasService": () => (/* binding */ BusquedasService)
 /* harmony export */ });
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ 6942);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
 /* harmony import */ var _models_hospital_model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/hospital.model */ 6274);
 /* harmony import */ var _models_usuario_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/usuario.model */ 8164);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ 8784);
 
+// import { environment } from '../../environments/environment';
 
 
 
 
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class BusquedasService {
     constructor(http) {
         this.http = http;
@@ -2869,12 +2872,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "FileUploadService": () => (/* binding */ FileUploadService)
 /* harmony export */ });
 /* harmony import */ var C_Users_Admin_Desktop_HospitalAngular_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
 
+// import { environment } from '../../environments/environment';
 
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__.environment.base_url;
 class FileUploadService {
   constructor() {}
 
@@ -2932,14 +2936,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "HospitalService": () => (/* binding */ HospitalService)
 /* harmony export */ });
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 6942);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 8784);
 
+// import { environment } from '../../environments/environment';
 
 
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class HospitalService {
     constructor(http) {
         this.http = http;
@@ -3001,14 +3006,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "MedicoService": () => (/* binding */ MedicoService)
 /* harmony export */ });
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ 6942);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 8784);
 
+// import { environment } from '../../environments/environment';
 
 
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class MedicoService {
     constructor(http) {
         this.http = http;
@@ -3077,11 +3083,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ModalImagenService": () => (/* binding */ ModalImagenService)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 3184);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
+
+// import { environment } from '../../environments/environment';
 
 
-
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class ModalImagenService {
     constructor() {
         this._ocultarModal = true;
@@ -3202,19 +3209,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ 7418);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ 5843);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 4139);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../environments/environment.prod */ 9019);
 /* harmony import */ var _models_usuario_model__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/usuario.model */ 8164);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ 8784);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 2816);
 
 
+// import { environment } from '../../environments/environment';
 
 
 
 
 
-const base_url = _environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
+const base_url = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_0__.environment.base_url;
 class UsuarioService {
     constructor(http, router, ngZone) {
         this.http = http;
@@ -3772,31 +3780,21 @@ SidebarComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2_
 
 /***/ }),
 
-/***/ 2340:
-/*!*****************************************!*\
-  !*** ./src/environments/environment.ts ***!
-  \*****************************************/
+/***/ 9019:
+/*!**********************************************!*\
+  !*** ./src/environments/environment.prod.ts ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "environment": () => (/* binding */ environment)
 /* harmony export */ });
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+// TODO: cambiar los urls de los servicios en produccion
 const environment = {
-    production: false,
-    base_url: 'http://localhost:3000/api',
+    production: true,
+    base_url: 'https://hospital-backendd.herokuapp.com/api',
 };
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
 
 
 /***/ }),
@@ -3811,12 +3809,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ 318);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 6747);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ 2340);
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment.prod */ 9019);
 
 
 
+// import { environment } from './environments/environment';
 
-if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.production) {
+if (_environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__.environment.production) {
     (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.enableProdMode)();
 }
 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule)
