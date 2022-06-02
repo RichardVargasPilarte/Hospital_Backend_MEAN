@@ -1,4 +1,5 @@
 const express = require('express'); // import express
+const path = require('path');
 
 require('dotenv').config(); // import dotenv
 
@@ -28,6 +29,11 @@ app.use('/api/medicos', require('./routes/medicos')); // import routes from usua
 app.use('/api/todo', require('./routes/busquedas')); // import routes from busquedas.js
 app.use('/api/login', require('./routes/auth')); // import routes from usuarios.js
 app.use('/api/upload', require('./routes/upload')); // import routes from upload.js
+
+// Lo último
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'public/index.html'));
+});
 
 app.listen(process.env.PORT, () => {
     console.log('listening on port' + process.env.PORT);    // listen process.env.PORT
