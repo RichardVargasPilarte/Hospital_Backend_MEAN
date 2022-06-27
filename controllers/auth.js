@@ -50,14 +50,11 @@ const login = async (req, res = response) => {
 
 const googleLogin = async (req, res = response) => {
 
-    const googleToken = req.body.token;
-
     try {
 
-        const { name, email, picture } = await googleVerify(googleToken);
+        const { email, name, picture } = await googleVerify(req.body.token);
 
         const usuarioDB = await Usuario.findOne({ email });
-
         let usuario;
 
         if (!usuarioDB) {
@@ -81,17 +78,17 @@ const googleLogin = async (req, res = response) => {
         // Generar token de jwt
         const token = await generarJWT(usuario.id);
 
-        res.status(200).json({
+        res.json({
             ok: true,
+            email, name, picture,
             token,
-            menu: getMenuFrontEnd(usuario.role)
         });
 
     } catch (error) {
         console.log(error);
-        res.status(401).json({
+        res.status(400).json({
             ok: false,
-            msg: 'Token no válido'
+            msg: 'Token de google invalido'
         });
     }
 
@@ -106,7 +103,7 @@ const renewToken = async (req, res = response) => {
 
     // Obtener el usuario por UID
     const usuario = await Usuario.findById(uid);
-    
+
     res.status(200).json({
         ok: true,
         token,
