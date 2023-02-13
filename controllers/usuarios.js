@@ -57,7 +57,7 @@ const crearUsuario = async (req, res = response) => {
         // TODO: Guarda USUARIO
         await usuario.save();
 
-        // Generar token de jwt
+        // TODO: Generar token de jwt
         const token = await generarJWT(usuario.id);
 
         res.json({
